@@ -26,6 +26,8 @@ _STEP 2 :_ Activate virtual environment :
 venv\Scripts\activate
 ```
 
+source venv/bin/activate
+
 > This command need administrative permissions.
 > Use command prompt to execute this
 > Will not work in powershell
