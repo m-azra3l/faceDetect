@@ -58,28 +58,11 @@ NOTE :
 
 - Both of these function takes as input a b64 encoded string which is sent via react webcam.
 - For testing purposes you will find a sample encoded string of foward pose image given below in _sample_input.txt_ file .
+- Here we are detecting only 3 directions (forward, left , right) because that is all we need.
+- The number of detected directions can be increased.
+ - To detect more directions go to draw annotations function in pose_estimator.py file and elif conditions for more angles.
 
 ---
-
-## Results of face pose estimation model :
-
-### LEFT POSE :
-
-![left_pose](images/left.jpeg)
-
-### RIGHT POSE :
-
-![right_pose](images/right_pose.jpeg)
-
-### FORWARD :
-
-![straight_pose](images/forward.jpg)
-
-NOTE :
-
-> - Here we are detecting only 3 directions (forward, left , right) because that is all we need.
-> - The number of detected directions can be increased.
-> - To detect more directions go to draw annotations function in pose_estimator.py file and elif conditions for more angles.
 
 ```py
 if angles[1] < -15:
